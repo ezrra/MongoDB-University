@@ -14,3 +14,4 @@ Virtual memory
 Memory mapping
 Hexidecimal (base-16) representations of data
 
+Basics of Javascript Programming

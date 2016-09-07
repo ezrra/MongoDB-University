@@ -1,0 +1,3 @@
+Sharded Collection
+Primary Shard
+
