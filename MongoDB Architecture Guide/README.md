@@ -91,11 +91,11 @@ Sharding allows MongoDB deployments to address the hardware limitations of a sin
 
 To distribute data across a cluster according to query patterns or data locality.
 
-#### Range-based Sharding: Documents are partitioned across shards according to the shard key value.
+- Range-based Sharding: Documents are partitioned across shards according to the shard key value.
 
-#### Hash-based Sharding: Documents are uniformly distributed according to an MD5 hash of the shard key value. This approah guarantees a uniform distribution of writes across shards, but is less optimal for range-based queries.
+- Hash-based Sharding: Documents are uniformly distributed according to an MD5 hash of the shard key value. This approah guarantees a uniform distribution of writes across shards, but is less optimal for range-based queries.
 
-#### Location-aware Sharding: Documents are partitioned according to a user-specified configuration that associates shard key ranges with specific shards and hardware.
+- Location-aware Sharding: Documents are partitioned according to a user-specified configuration that associates shard key ranges with specific shards and hardware.
 
 ## Query Router
 
@@ -119,4 +119,41 @@ Operations that modify a database on the primary replica set member are replicat
 
 ## Performance & Compression
 ### In-Memory Performance With On-Disk Capacity
+MongoDB users can now realize the performance advantages of in-memory computing for operational and real-time analytics workloads. 
+
+Storage Efficiency with Compression
+
+## Security
+### Authentication.
+LDAP, Windows Active Directory, Kerberos, and x509 certificates.
+### Authorization.
+User-defined roles enable administrators to configure granular permissions for a user or an application based on the privileges they need to do their job.
+### Auditing.
+For regulatory compliance, security administrators can use MongoDB's native audit log to track any operation taken against the database wheter DML, DCL or DDL.
+### Encryption.
+MongoDB data can be encrypted on the network and on disk. Encrypted storage engine. 
+
+## Managing MongoDB - Provisioning, Monitoring and Disaster Recovery
+MongoDB Ops Manager. MongoDB Cloud Manager tool hosted in the cloud.
+MongoBD Enterprise Advanced can choose between Ops Manager and Cloud Manager for their deployments.
+
+Ops Manager
+- Deployment
+- Upgrade
+- Scale
+- Visualize
+- Point-in-time, Scheduled Backups
+- Performance Alerts
+
+### Deployments and Upgrades
+
+## MongoDB Atlas: Database as a Service For MongoDB
+
+- Security features to protect access to your data
+- Built in replication for always-on availability, toleranting complete data center failure
+- Backups and point in time recovery to protect against
+- Fine-grained monitoring to let you know when to scale. Additional instances can be provisioned with the push of a button.
+- Automated patching and one-click upgrades for new major bersions of the database, enabling you to take advantage of the lates and greatest MongoDB features
+- A choice of cloud providers, regions, and billing options
+
 
